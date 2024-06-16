@@ -1,2 +1,1 @@
-TEL-U LIBCONNECT 
-Aplikasi Tel-U LibConnect menggunakan pendekatan monolitik dalam arsitektur perangkat lunaknya. Ini berarti semua fitur utama seperti manajemen buku, peminjaman, pengelolaan karyawan, dan pencarian buku dikembangkan sebagai satu kesatuan yang terintegrasi dalam satu kodebase tunggal. Dalam konteks ini, semua komponen aplikasi saling terhubung dan berbagi sumber daya efisien, emmungkinkan integrasi yang mudah antar fitur dan modul tanpa memerlukan komunikasi antar aplikasi terpisah. 
+# TEL-U-LIBCONNECT
