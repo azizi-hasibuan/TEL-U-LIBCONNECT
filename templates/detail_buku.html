@@ -1,0 +1,47 @@
+{% extends 'base.html' %}
+
+{% block title %}Detail Buku{% endblock %}
+
+{% block content %}
+<section class="py-5">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 mx-auto">
+                <div class="card shadow-sm">
+                    <div class="row g-0">
+                        <div class="col-md-4 d-flex align-items-center justify-content-center">
+                            {% if buku[8] %}
+                            <img src="{{ url_for('static', filename='uploads/' + buku[8]) }}" class="img-fluid rounded-start" style="max-width: 100%; height: auto; object-fit: contain;" alt="{{ buku[1] }}">
+                            {% else %}
+                            <img src="{{ url_for('static', filename='uploads/default.jpg') }}" class="img-fluid rounded-start" style="max-width: 100%; height: auto; object-fit: contain;" alt="{{ buku[1] }}">
+                            {% endif %}
+                        </div>
+                        <div class="col-md-8">
+                            <div class="card-body">
+                                <h2 class="card-title mb-4">{{ buku[1] }}</h2>
+                                <div class="mb-3">
+                                    <h5 class="card-subtitle mb-2 text-muted">Tahun Terbit:</h5>
+                                    <p class="card-text">{{ buku[2] }}</p>
+                                </div>
+                                <div class="mb-3">
+                                    <h5 class="card-subtitle mb-2 text-muted">Sinopsis:</h5>
+                                    <p class="card-text">{{ buku[3] }}</p>
+                                </div>
+                                <div class="mb-3">
+                                    <h5 class="card-subtitle mb-2 text-muted">Penerbit:</h5>
+                                    <p class="card-text">{{ buku[4] }}</p>
+                                </div>
+                                <div class="mb-3">
+                                    <h5 class="card-subtitle mb-2 text-muted">Lokasi:</h5>
+                                    <p class="card-text">{{ buku[5] }}</p>
+                                </div>
+                                <a href="/buku" class="btn btn-primary mt-3">Kembali ke Daftar Buku</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+{% endblock %}
